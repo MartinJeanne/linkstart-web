@@ -45,5 +45,5 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: "dist/index.html"
+          source: "dist/"
           target: /home/martin/linkstart-web
