@@ -21,12 +21,24 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: copy dist/ via ssh key
+      - name: copy dist/ on VPS
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: "dist/*"
-          target: /home/martin/linkstart-web
+          source: "dist/"
+          target: /home/martin/temp
+
+      - name: Deploy to Production
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /home/martin
+            rm -r linkstart-web/*
+            cp -r temp/dist/* linkstart-web/
