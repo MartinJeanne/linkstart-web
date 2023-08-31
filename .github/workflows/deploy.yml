@@ -28,9 +28,6 @@ jobs:
           name: production-files
           path: ./dist
 
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
     - uses: actions/checkout@v3
     - name: copy file via ssh password
       uses: appleboy/scp-action@v0.1.4
