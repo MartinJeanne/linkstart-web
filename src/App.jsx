@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import loopIcon from './assets/loop.png'
+import linkstartAndDiscord from './assets/linkstartAndDiscord.png'
 import './App.css'
 
 function App() {
@@ -17,22 +18,27 @@ function App() {
           <a href="#">Home</a>
           <a href="#">Contact</a>
         </nav>
+
         <div id="rightNav">
           <img id="loopIcon" src={loopIcon} alt="loop icon" />
           <button>Invite</button>
         </div>
       </header>
-      <div className="card">
-        <button onClick={incrementCount}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div id="main">
+        <div>
+          <h2>A bot designed<br />for <span className="textRed">you</span>!</h2>
+          <p>Linkstart is a bot wich allow you to listen<br />to <span className="textRed">music </span>
+            and view <span className="textRed">quote</span> of famous persons,<br /> and that's only the gist of it!</p>
+        </div>
+        <div>
+          <img id="linkstartAndDiscord" src={linkstartAndDiscord} alt="" />
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <footer>
+        © 2023 Garwalle - all rights reserved
+      </footer>
     </>
   )
 }
