@@ -31,7 +31,7 @@ jobs:
           source: "dist/"
           target: /home/martin/temp
 
-      - name: Deploy to Production
+      - name: Move dist/ files to the right place
         uses: appleboy/ssh-action@v0.1.6
         with:
           host: ${{ secrets.SSH_HOST }}
@@ -42,3 +42,4 @@ jobs:
             cd /home/martin
             rm -r linkstart-web/*
             cp -r temp/dist/* linkstart-web/
+            rm -r temp/*

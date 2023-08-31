@@ -4,11 +4,11 @@ import linkstartAndDiscord from './assets/linkstartAndDiscord.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+  //const [count, setCount] = useState(0);
 
-  function incrementCount() {
+  /*function incrementCount() {
     setCount((count) => count + 1);
-  }
+  }*/
 
   return (
     <>
@@ -29,7 +29,7 @@ function App() {
         <div>
           <h2>A bot designed<br />for <span className="textRed">you</span>!</h2>
           <p>Linkstart is a bot wich allow you to listen<br />to <span className="textRed">music </span>
-            and view <span className="textRed">quote</span> of famous persons,<br /> and that's only the gist of it!</p>
+            and view <span className="textRed">quote</span> of famous persons,<br /> and that is only the gist of it!</p>
         </div>
         <div>
           <img id="linkstartAndDiscord" src={linkstartAndDiscord} alt="" />
