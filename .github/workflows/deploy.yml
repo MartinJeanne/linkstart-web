@@ -39,9 +39,6 @@ jobs:
         with:
           # Upload dist repository
           path: './dist'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
 
       - name: copy file via ssh key
         uses: appleboy/scp-action@v0.1.4
