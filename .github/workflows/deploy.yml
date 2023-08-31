@@ -7,18 +7,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow one concurrent deployment
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
-
+cl
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -34,16 +23,13 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      
-      - name: test ls
-        run: ls
 
-      - name: copy file via ssh key
+      - name: copy dist/ via ssh key
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          source: "dist/"
+          source: "dist/*"
           target: /home/martin/linkstart-web
