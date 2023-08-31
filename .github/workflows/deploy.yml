@@ -36,9 +36,9 @@ jobs:
     - name: copy file via ssh password
       uses: appleboy/scp-action@v0.1.4
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        key: ${{ secrets.SSH_KEY }}
+        port: ${{ secrets.SSH_PORT }}
         source: ./dist/*
         target: /home/martin/linkstart-web
