@@ -28,13 +28,13 @@ jobs:
           name: production-files
           path: ./dist
 
-    - name: copy file via ssh password
-    - uses: actions/checkout@v3
-      uses: appleboy/scp-action@v0.1.4
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        port: ${{ secrets.SSH_PORT }}
-        source: "README.md"
-        target: /home/martin/linkstart-web
+      - name: copy file via ssh password
+      - uses: actions/checkout@v3
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "README.md"
+          target: /home/martin/linkstart-web
