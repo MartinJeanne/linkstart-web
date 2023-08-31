@@ -22,14 +22,15 @@
 
 #main {
   width: 90%;
-  padding-top: 150px;
+  height: 85vh;
+  padding-top: 15vh;
   margin: auto;
   display: flex;
   justify-content: space-around;
 }
 
 #main h2 {
-  margin-top: 0;
+  margin-top: 15vh;
   margin-bottom: 0;
 }
 
@@ -38,6 +39,7 @@
 }
 
 #linkstartAndDiscord {
+  margin-top: 10vh;
   width: 500px;
   padding-right: 5vw;
 }
