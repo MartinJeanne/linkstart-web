@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import loopIcon from './assets/loop.png'
 import './App.css'
 
 function App() {
@@ -19,7 +18,8 @@ function App() {
           <a href="#">Contact</a>
         </nav>
         <div id="rightNav">
-          <img src="loop.png" alt="loop icon" />
+          <img id="loopIcon" src={loopIcon} alt="loop icon" />
+          <button>Invite</button>
         </div>
       </header>
       <div className="card">

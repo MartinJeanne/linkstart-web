@@ -15,7 +15,6 @@
 }
 
 header {
-  padding-left: 2vw;
   width: 100%;
   position: fixed;
   top: 0;
@@ -26,15 +25,15 @@ header {
 }
 
 nav {
-  width: 50%;
-  padding-left: 2vw;
+  width: 40%;
+  margin-left: 2vw;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
 
 a {
-  margin-left: 2vw;
+  margin-left: 3vw;
   font-size: 2em;
   text-decoration: inherit;
   color: #FBF7F7;
@@ -53,18 +52,19 @@ body {
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  line-height: 0.6;
   letter-spacing: 3px;
 }
 
 button {
+  color: #EF233C;
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  padding: 0.3em 1.8em;
+  font-size: 1.5em;
+  font-weight: 800;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #FBF7F7;
   cursor: pointer;
   transition: border-color 0.25s;
 }

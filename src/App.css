@@ -4,8 +4,15 @@
 }
 
 #rightNav {
-  width: 20%;
-  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+#loopIcon {
+  width: 60px;
+  margin-right: 2vw;
 }
 
 .logo {
