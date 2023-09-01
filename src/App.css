@@ -3,9 +3,21 @@
   margin: auto;
 }
 
+h1 {
+  margin: 0;
+  font-size: 3.2em;
+  line-height: 0.9;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 6em;
+}
+
 header {
   width: 100%;
-  height: 12vh;
+  height: 8vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,15 +42,23 @@ a {
   color: #FBF7F7;
 }
 
+#title {
+  cursor: pointer;
+}
+
+#title:hover .underline {
+  width: 100%;
+}
+
 .underline {
   background-color: #FBF7F7;
   margin-left: 4px;
   width: 70%;
   height: 4px;
-}
-
-.underline:hover {
-  width: 100%;
+  transition:
+    width 1s,
+    height 1s,
+    transform 1s;
 }
 
 a:hover {
@@ -64,9 +84,10 @@ a:hover {
 }
 
 #main {
-  width: 90%;
-  height: 88vh;
-  padding-top: 12vh;
+  padding-top: 8vh;
+  height: 92vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -78,7 +99,7 @@ a:hover {
 }
 
 #main p {
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 #linkstartAndDiscord {
@@ -89,8 +110,10 @@ a:hover {
 
 footer {
   width: 100%;
-  padding-top: 2vh;
+  padding-top: 1px;
   height: 10vh;
   text-align: center;
   background-color: #171614;
+  display: flex;
+  justify-content: center;
 }

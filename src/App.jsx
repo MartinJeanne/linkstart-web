@@ -2,6 +2,7 @@ import { useState } from 'react'
 import loopIcon from './assets/loop.png'
 import linkstartAndDiscord from './assets/linkstartAndDiscord.png'
 import './App.css'
+import './page2.css'
 import './imported.css'
 
 function App() {
@@ -11,11 +12,18 @@ function App() {
     setCount((count) => count + 1);
   }*/
 
+  const inviteBot = () => {
+    window.open(
+      'https://discord.com/oauth2/authorize?client_id=784536536459771925&permissions=8&scope=bot',
+      '_blank'
+    );
+  };
+
   return (
     <>
       <header>
         <nav>
-          <div id="title">
+          <div id="title" onClick={inviteBot}>
             <h1>Linkstart</h1>
             <div className='underline'></div>
           </div>
@@ -25,7 +33,7 @@ function App() {
 
         <div id="rightNav">
           <input className="input" name="text" placeholder="Search..." type="search" />
-          <button className="inviteButton">Invite</button>
+          <button className="inviteButton" onClick={inviteBot}>Invite bot</button>
         </div>
       </header>
 
@@ -40,8 +48,12 @@ function App() {
         </div>
       </div>
 
+      <div className='page2'>
+
+      </div>
+
       <footer>
-        © 2023 Garwalle - all rights reserved
+        <p>© 2023 Garwalle - all rights reserved</p>
       </footer>
     </>
   )
