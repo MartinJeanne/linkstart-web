@@ -3,6 +3,48 @@
   margin: auto;
 }
 
+header {
+  width: 100%;
+  height: 12vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #EF233C;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  width: 30%;
+  margin-left: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  margin-top: 5px;
+  margin-left: 3vw;
+  font-size: 2em;
+  text-decoration: inherit;
+  color: #FBF7F7;
+}
+
+.underline {
+  background-color: #FBF7F7;
+  margin-left: 4px;
+  width: 70%;
+  height: 4px;
+}
+
+.underline:hover {
+  width: 100%;
+}
+
+a:hover {
+  color: #f0e9e9;
+}
+
 #rightNav {
   display: flex;
   justify-content: flex-end;
@@ -11,8 +53,9 @@
 }
 
 #loopIcon {
-  width: 60px;
-  margin-right: 2vw;
+  width: 40px;
+  margin-right: 0.5vw;
+  cursor: pointer;
 }
 
 .textRed {
@@ -22,8 +65,8 @@
 
 #main {
   width: 90%;
-  height: 85vh;
-  padding-top: 15vh;
+  height: 88vh;
+  padding-top: 12vh;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -39,7 +82,15 @@
 }
 
 #linkstartAndDiscord {
-  margin-top: 10vh;
-  width: 500px;
+  margin-top: 8vh;
+  width: 680px;
   padding-right: 5vw;
+}
+
+footer {
+  width: 100%;
+  padding-top: 2vh;
+  height: 10vh;
+  text-align: center;
+  background-color: #171614;
 }

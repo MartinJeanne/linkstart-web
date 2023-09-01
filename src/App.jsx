@@ -2,6 +2,7 @@ import { useState } from 'react'
 import loopIcon from './assets/loop.png'
 import linkstartAndDiscord from './assets/linkstartAndDiscord.png'
 import './App.css'
+import './imported.css'
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -14,14 +15,17 @@ function App() {
     <>
       <header>
         <nav>
-          <h1>Linkstart</h1>
+          <div id="title">
+            <h1>Linkstart</h1>
+            <div className='underline'></div>
+          </div>
           <a href="#">Home</a>
           <a href="#">Contact</a>
         </nav>
 
         <div id="rightNav">
-          <img id="loopIcon" src={loopIcon} alt="loop icon" />
-          <button>Invite</button>
+          <input className="input" name="text" placeholder="Search..." type="search" />
+          <button className="inviteButton">Invite</button>
         </div>
       </header>
 
