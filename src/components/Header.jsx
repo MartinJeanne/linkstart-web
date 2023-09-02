@@ -9,15 +9,27 @@ function Header() {
     );
   };
 
+  const products = [
+    { title: 'Cabbage', id: 1 },
+    { title: 'Garlic', id: 2 },
+    { title: 'Apple', id: 3 },
+  ];
+
+  const listItems = products.map(product =>
+    <li key={product.id}>
+      {product.title}
+    </li>
+  );
+
   return (
     <header>
       <nav>
         <div id="title" onClick={inviteBot}>
           <h1>Linkstart</h1>
-          <div className='underline'></div>
+          <div id='titleUnderline'></div>
         </div>
-        <a href="#">Home</a>
-        <a href="#">Contact</a>
+        <a href="/">Home</a>
+        <a href="/contact">Contact</a>
       </nav>
 
       <div id="rightNav">
