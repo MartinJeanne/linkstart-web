@@ -16,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  border-bottom: solid #FBF7F7 3px;
 }
 
 nav {
@@ -27,34 +28,49 @@ nav {
 }
 
 a {
+  position: relative;
   margin-top: 5px;
   margin-left: 3vw;
   font-size: 1.5em;
   text-decoration: inherit;
   color: #FBF7F7;
+  text-shadow:  5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FBF7F7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
 }
 
 #title {
   cursor: pointer;
 }
 
-#title:hover .underline {
+#title:hover #titleUnderline {
   width: 100%;
 }
 
-.underline {
+#titleUnderline {
   background-color: #FBF7F7;
   margin-left: 4px;
   width: 46%;
   height: 4px;
-  transition:
-    width 0.8s,
-    height 0.8s,
-    transform 0.8s;
-}
-
-a:hover {
-  color: #f0e9e9;
+  transition: ease
+    width 0.5s,
+    transform 0.5s;
+    
 }
 
 #rightNav {
