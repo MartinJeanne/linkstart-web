@@ -24,6 +24,7 @@ header {
   background-color: #EF233C;
   display: flex;
   justify-content: space-between;
+  z-index: 10;
 }
 
 nav {
@@ -37,7 +38,7 @@ nav {
 a {
   margin-top: 5px;
   margin-left: 3vw;
-  font-size: 2em;
+  font-size: 1.5em;
   text-decoration: inherit;
   color: #FBF7F7;
 }
@@ -53,12 +54,12 @@ a {
 .underline {
   background-color: #FBF7F7;
   margin-left: 4px;
-  width: 70%;
+  width: 46%;
   height: 4px;
   transition:
-    width 1s,
-    height 1s,
-    transform 1s;
+    width 0.8s,
+    height 0.8s,
+    transform 0.8s;
 }
 
 a:hover {
@@ -102,10 +103,46 @@ a:hover {
   font-size: 2em;
 }
 
-#linkstartAndDiscord {
-  margin-top: 8vh;
-  width: 680px;
-  padding-right: 5vw;
+#main .imgs {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .img {
+  width: 45vh;
+  transition:
+    width 0.5s,
+    filter 0.5s,
+    transform 0.5s;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.icon {
+  width: 70px;
+}
+
+#linkstartImg:hover,
+#discordImg:hover {
+  width: 48vh;
+  filter: saturate(120%);
+}
+
+#linkstartImg {
+  z-index: 1;
+  margin-right: 8vw;
+}
+
+#discordImg {
+  z-index: 0;
+  margin-top: -10vh;
 }
 
 footer {
