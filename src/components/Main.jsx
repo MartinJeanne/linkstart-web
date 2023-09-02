@@ -1,5 +1,6 @@
 import '../App.css'
 import '../style/main.css'
+import greyBg from '../assets/greyBg.jpg'
 import discordImg from '../assets/discord.png'
 import linkstartImg from '../assets/linkstart.png'
 import musicIcon from '../assets/music.png'
@@ -10,6 +11,11 @@ function Main() {
 
   return (
     <div id="main">
+      <img
+        className="greyBg"
+        src={greyBg}
+        alt=""
+      ></img>
       <div>
         <h2>A bot designed<br />for <span className="textRed">you</span>!</h2>
         <p>Linkstart is a bot wich allow you to listen<br />to <span className="textRed">music</span>,
@@ -25,6 +31,7 @@ function Main() {
         <img className="img" id="linkstartImg" src={linkstartImg} alt="" />
         <img className="img" id="discordImg" src={discordImg} alt="" />
       </div>
+
     </div>
   )
 }

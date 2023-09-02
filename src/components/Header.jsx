@@ -28,8 +28,8 @@ function Header() {
           <h1>Linkstart</h1>
           <div id='titleUnderline'></div>
         </div>
-        <a href="#">Home</a>
-        <a href="#">Contact</a>
+        <a href="/">Home</a>
+        <a href="/contact">Contact</a>
       </nav>
 
       <div id="rightNav">
