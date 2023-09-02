@@ -1,0 +1,88 @@
+h2 {
+  font-style: italic;
+  font-size: 6em;
+}
+
+#main {
+  padding-top: 8vh;
+  height: 92vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #242424;
+}
+
+#main h2 {
+  margin-top: 15vh;
+  margin-bottom: 0;
+}
+
+#main p {
+  font-size: 2em;
+}
+
+#main .imgs {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main .img {
+  width: 45vh;
+  transition:
+    width 0.5s,
+    filter 0.5s,
+    transform 0.5s;
+}
+
+.icons {
+  width: 40%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 70px;
+  transition:
+    width 0.5s,
+    filter 0.5s,
+    transform 0.5s;
+}
+
+#musicIcon:hover,
+#quoteIcon:hover,
+#confettisIcon:hover {
+  width: 90px;
+}
+
+#linkstartImg:hover,
+#discordImg:hover {
+  width: 48vh;
+  filter: saturate(120%);
+}
+
+#linkstartImg {
+  z-index: 1;
+}
+
+#discordImg {
+  z-index: 0;
+  margin-top: -25vh;
+  margin-right: 20vw;
+}
+
+footer {
+  width: 100%;
+  padding-top: 1px;
+  height: 10vh;
+  text-align: center;
+  background-color: #171614;
+  display: flex;
+  justify-content: center;
+}

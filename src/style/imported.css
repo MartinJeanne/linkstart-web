@@ -71,7 +71,7 @@
 /* Search bar */
 .input {
   margin-right: 1vw;
-  max-width: 190px;
+  width: 15vw;
   background-color: #FBF7F7;
   color: #242424;
   padding: .15rem .5rem;
