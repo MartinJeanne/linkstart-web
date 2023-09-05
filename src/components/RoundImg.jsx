@@ -1,17 +1,12 @@
-import { useState } from 'react'
+/* eslint-disable react/prop-types */
 import '../style/roundImg.css'
 
-function RoundImg() {
-  /*const [bg, setBg] = useState('white');
-
-  function changeBg() {
-    if (bg === 'white') setBg('red');
-    else setBg('white');
-  }*/
+function RoundImg({ src }) {
 
   return (
-    <div className='roundImg'>
-      <img src="https://www.pngall.com/wp-content/uploads/2016/03/Rat-PNG-Picture.png" alt="" />
+    <div className='roundImgLayout'>
+      <div></div>
+      <div className='roundImg' style={{backgroundImage: `url(${src})`}}></div>
     </div>
   )
 }
