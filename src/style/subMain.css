@@ -1,16 +1,47 @@
 #subMain {
   height: 82vh;
   background-color: #FBF7F7;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.subMainGreyBg {
-  overflow: hidden;
-  z-index: 0;
-  opacity: 0.3;
-  position: absolute;
-  left: 0;
-  top: 100vh;
-  width: 100%;
-  height: 82vh;
-  filter: brightness(100%);
+#subMainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #171614;
+}
+
+.subMainTitle {
+  color: black;
+}
+
+.subMainPP {
+  display: flex;
+  flex-direction: column;
+}
+
+.profilPictures {
+  width: 45vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profilPictureLine {
+  display: flex;
+  justify-content: space-around;
+}
+
+.subMainPlaylists {
+  width: 40vw;
+  padding: 2vw;
+  background-color: #2E2B28;
+  border-radius: 15px;
+  color: #FBF7F7;
 }

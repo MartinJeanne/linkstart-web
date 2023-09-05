@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: copy dist/ on VPS
+      - name: Copy dist/ on VPS
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.SSH_HOST }}
