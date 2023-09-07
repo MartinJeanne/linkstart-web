@@ -45,3 +45,9 @@
   border-radius: 15px;
   color: #FBF7F7;
 }
+
+.imgBlock {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
